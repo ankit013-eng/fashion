@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>Your Cart</header>
+<div class="container" id="cart"></div>
+
+<script>
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+document.getElementById("cart").innerText =
+  "Items in cart: " + cart.length;
+</script>
+
+</body>
+</html>

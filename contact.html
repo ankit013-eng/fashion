@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Contact</h2>
+  <input id="name" placeholder="Name"><br><br>
+  <input id="msg" placeholder="Message"><br><br>
+  <button onclick="send()">Send</button>
+</div>
+
+<script>
+async function send() {
+  await fetch("/api/contact", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      name: name.value,
+      message: msg.value
+    })
+  });
+  alert("Message sent");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Rose Gold Necklace",
+    "price": 899,
+    "category": "Necklace",
+    "image": "https://via.placeholder.com/300x300?text=Necklace"
+  },
+  {
+    "id": 2,
+    "name": "Pearl Earrings",
+    "price": 499,
+    "category": "Earrings",
+    "image": "https://via.placeholder.com/300x300?text=Earrings"
+  },
+  {
+    "id": 3,
+    "name": "Gold Bracelet",
+    "price": 699,
+    "category": "Bracelet",
+    "image": "https://via.placeholder.com/300x300?text=Bracelet"
+  }
+]
